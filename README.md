@@ -1,0 +1,1 @@
+# typora-night-color-separator-theme
