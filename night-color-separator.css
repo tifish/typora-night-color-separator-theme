@@ -1,0 +1,69 @@
+/*
+Theme Name: Night Color Separator
+Theme URI: https://github.com/tifish/typora-night-color-separator-theme
+Authors: Winston Feng
+Author URI: https://github.com/tifish
+Description: Typora theme based on Night, adding colors for lists and hyperlinks, separator for headers.
+Version: 1.0
+Tags: dark, night, separator, typora
+*/
+
+@import "night.css";
+
+/* ul with color */
+#write ul {
+    list-style: none;
+}
+
+#write>ul>li>p::before {
+    content: "\2022";
+    color: orange;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#write>ul>li>ul>li>p::before {
+    content: "\25E6";
+    color: orange;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#write li>p::before {
+    content: "\25AA";
+    color: orange;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ol with color */
+#write ol {
+    list-style: none;
+    counter-reset: olli
+}
+
+#write ol>li>p::before {
+    counter-increment: olli;
+    content: counter(olli) ".";
+    color: orange;
+    font-weight: normal;
+    display: inline-block;
+    width: 1.10em;
+    margin-left: -1.10em
+}
+
+/* Header line */
+h1,
+h2 {
+    border-bottom: 1px solid rgb(72, 72, 72)
+}
+
+a,
+a>span {
+    color: #4183C4;
+}
