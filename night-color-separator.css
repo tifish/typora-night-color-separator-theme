@@ -24,6 +24,7 @@ Tags: dark, night, separator, typora
     margin-left: -1em;
 }
 
+#write>ol>li>ul>li>p::before,
 #write>ul>li>ul>li>p::before {
     content: "\25E6";
     color: orange;
