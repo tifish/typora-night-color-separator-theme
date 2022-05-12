@@ -54,8 +54,9 @@ Tags: dark, night, separator, typora
     color: orange;
     font-weight: normal;
     display: inline-block;
-    width: 1.10em;
-    margin-left: -1.10em
+    width: 1.60em;
+    text-align: right;
+    margin-right: 0.30em
 }
 
 /* Header line */
